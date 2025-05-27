@@ -1,0 +1,93 @@
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: #f3e5f5; /* پس‌زمینه بنفش کم‌رنگ */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #6a0dad;
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 38px;
+    color: #6a0dad;
+}
+
+p{
+    font-size: 32px;
+    color: black;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+il {
+    list-style: none;
+    width: calc(33.333% - 20px); /* سه‌تایی در هر ردیف */
+    margin: 10px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border: 2px solid #6a0dad;
+}
+
+/* انیمیشن هنگام هاور */
+il:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    border-color: #8a2be2;
+}
+
+h1:hover {
+    transform: scale(1.05);
+    border-color: #8a2be2;
+}
+
+
+img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+h4 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #6a0dad;
+}
+
+button {
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #8a2be2, #6a0dad);
+    transform: scale(1.1);
+}
+
+/* واکنش‌گرا برای موبایل */
+@media (max-width: 768px) {
+    il {
+        width: calc(33.333% - 10px); /* حتی در موبایل ۳‌تایی */
+    }
+}
+helia93-patch-1.com/docs
