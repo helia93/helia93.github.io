@@ -1,93 +1,111 @@
+/* تنظیمات کلی صفحه */
 body {
-    font-family: 'Vazirmatn', sans-serif;
-    background-color: #f3e5f5; /* پس‌زمینه بنفش کم‌رنگ */
+    font-family: 'Tahoma', sans-serif;
+    background-color: #ebf3ad;
     text-align: center;
-    margin: 0;
-    padding: 20px;
+    padding: 50px;
 }
-
 h1 {
-    color: #6a0dad;
-    font-size: 48px;
+    animation: fadeIn 1s ease-in-out;
 }
 
-h2 {
-    font-size: 38px;
-    color: #6a0dad;
-}
-
-p{
-    font-size: 32px;
-    color: black;
-}
-
-ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 0;
-}
-
-il {
-    list-style: none;
-    width: calc(33.333% - 20px); /* سه‌تایی در هر ردیف */
-    margin: 10px;
-    padding: 15px;
-    background: white;
+/* استایل متن */
+h1 {
+    font-size: 24px;
+    color: #333;
+    background-color: #f6fa05;
+    padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border: 2px solid #6a0dad;
-}
-
-/* انیمیشن هنگام هاور */
-il:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border-color: #8a2be2;
-}
-
-h1:hover {
-    transform: scale(1.05);
-    border-color: #8a2be2;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    animation: bounce 0.2s infinite alternate;
 }
 
 
-img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 8px;
+/* افکت انیمیشن برای متن */
+h1 {
+    animation: bounce 0.5s infinite alternate;
 }
-
-h4 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #6a0dad;
+.h {
+    font-size: 24px;
+    color: #333;
+    background-color: #f0f278;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-button {
-    background: linear-gradient(135deg, #6a0dad, #8a2be2);
-    color: white;
-    border: none;
-    padding: 12px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+.h {
+    animation: bounceee 0.5s infinite alternate;    
 }
-
-button:hover {
-    background: linear-gradient(135deg, #8a2be2, #6a0dad);
+.h:hover {
+    background-color: #edd712;
     transform: scale(1.1);
+    border-color: #c2e60f;
 }
 
-/* واکنش‌گرا برای موبایل */
-@media (max-width: 768px) {
-    il {
-        width: calc(33.333% - 10px); /* حتی در موبایل ۳‌تایی */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
-helia93-patch-1.com/docs
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-50px);
+    }
+}
+@keyframes bouncee {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(20px);
+    }
+}
+@keyframes bounceee {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+
+
+
+.c {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cc {
+    padding: 15px 20px;
+    background-color: #f5ed0b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    animation: bouncee 0.5s infinite alternate;
+}
+
+.cc:hover {
+    background-color: #eddd05;
+    transform: scale(1.1);
+    border-color: #e7edea;
+}
