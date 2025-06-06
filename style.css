@@ -1,111 +1,52 @@
-/* تنظیمات کلی صفحه */
 body {
-    font-family: 'Tahoma', sans-serif;
-    background-color: #ebf3ad;
+    font-family: "Vazirmatn", sans-serif;
+    background-color: #f8e8ff;
+    color: #333;
     text-align: center;
-    padding: 50px;
-}
-h1 {
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* استایل متن */
-h1 {
-    font-size: 24px;
-    color: #333;
-    background-color: #f6fa05;
     padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    animation: bounce 0.2s infinite alternate;
 }
 
-
-/* افکت انیمیشن برای متن */
-h1 {
-    animation: bounce 0.5s infinite alternate;
-}
-.h {
-    font-size: 24px;
-    color: #333;
-    background-color: #f0f278;
+.container {
+    background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-.h {
-    animation: bounceee 0.5s infinite alternate;    
-}
-.h:hover {
-    background-color: #edd712;
-    transform: scale(1.1);
-    border-color: #c2e60f;
+    border-radius: 15px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-@keyframes bounce {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-50px);
-    }
-}
-@keyframes bouncee {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(20px);
-    }
-}
-@keyframes bounceee {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateX(20px);
-    }
-}
-
-
-
-.c {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.cc {
-    padding: 15px 20px;
-    background-color: #f5ed0b;
+button {
+    background-color: #b97eba;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.4s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid transparent;
-    animation: bouncee 0.5s infinite alternate;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.2s;
 }
 
-.cc:hover {
-    background-color: #eddd05;
-    transform: scale(1.1);
-    border-color: #e7edea;
+button:hover {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
 }
